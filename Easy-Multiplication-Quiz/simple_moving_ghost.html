@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <body style="background-color: darkblue">
+        <img id="ghost" src="ghost.png" style="position:absolute;">
+</body>
+<script>
+    var timer = window.setInterval(moveGhost, 2000);
+      function moveGhost() {
+        document.getElementById("ghost").style.left=Math.random()*900+"px";
+        document.getElementById("ghost").style.top=Math.random()*600+"px";
+      }
+</script>
+</html>
